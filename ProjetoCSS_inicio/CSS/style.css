@@ -35,7 +35,7 @@ body{
 }
 
 .cabecalho nav a:hover{
-    background: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -54,6 +54,13 @@ body{
     margin-top: 130px;
 }
 
+.titulo p {
+    display: inline-block;
+    border-bottom: 2px solid white;  
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
 
 
 main{
@@ -65,7 +72,7 @@ main{
     background-color: white;
     padding: 15px;
     margin-top: 15px;
-    height: 200px;
+    overflow: auto;
 }
 
 .conteudo h2{
@@ -75,8 +82,35 @@ main{
     border-color: violet;
 }   
 .card{                      /*colocar imagens lado a lado*/
+    width: 32%;
     float: left;
-    width: 33.33%;
+    
+}
+
+.card p{
+    background-color:  rgba(0, 0, 0, 0.6);
+    color: white;
+    margin: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.card a{
+    text-decoration: none;
+    color:white;
+}
+
+.card p:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+.card01, .card02 {
+    margin-right: 2%;
+}
+
+.card img {
+    width: 100%;
+    display:block;
 }
 
 .rodape{
