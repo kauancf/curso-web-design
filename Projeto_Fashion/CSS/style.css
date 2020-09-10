@@ -1,0 +1,117 @@
+body{
+    font-family: Arial, sans-serif;
+    background: white;
+    margin: 50px 150px 150px 150px;
+    
+}
+
+.cabecalho{
+    background-image: url(../imagens/topo.jpg);
+    height: 500px;
+    background-size: cover;
+}
+
+.cabecalho .logo{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 100px;
+    position: relative;
+}
+.cabecalho nav ul{
+    text-align: right;
+    position: absolute;
+    top: 40px;
+    right: 180px;
+    
+}
+
+.cabecalho nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.cabecalho a{
+    display: block;
+    color: #ffffff6b;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 10px;
+}
+.cabecalho nav a:hover{
+    background-color: rgba(126, 126, 126, 0.8);
+
+}
+
+.section01 {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    overflow: auto;
+    margin-top: 50px;
+}
+
+.titulo {
+    font-size: 25px;
+
+}
+
+.texto{
+    margin-bottom: 30px;
+}
+.card{                      /*colocar imagens lado a lado*/
+    width: 32%;
+    float: left;
+}
+
+.gallery img{
+    width: 100%;
+}
+.card01, .card02 {
+    margin-right: 2%;
+}
+
+.nome{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 650;
+}
+
+.section02{
+    margin-top: 50px;
+    background-image: url(../imagens/bg_detalhe.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sobre{
+    color:rgb(255, 255, 255);
+    text-align: left;
+    padding: 50px 300px 200px 100px;
+
+}
+
+.sobre h1{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.sobre p{
+    font-size: 20px;
+}
+
+.contato{
+    font-size: 25px;
+    font-weight: 650;
+    text-align: center;
+}
+
+.rodape{
+    height: 50px;
+    line-height: 50px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: center;
+    background: black;
+}
