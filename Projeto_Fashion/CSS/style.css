@@ -1,8 +1,14 @@
 body{
-    font-family: Arial, sans-serif;
+    font-family: tahoma, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+        
+}
+
+#principal{
     background: white;
     margin: 50px 150px 150px 150px;
-    
+
 }
 
 .cabecalho{
@@ -31,15 +37,16 @@ body{
 }
 
 .cabecalho a{
-    display: block;
     color: #ffffff6b;
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px;
-    font-size: 10px;
+    font-size: 17px;
+    transition: color .3s linear;
+    
 }
 .cabecalho nav a:hover{
-    background-color: rgba(126, 126, 126, 0.8);
+    color:white;
 
 }
 
@@ -48,7 +55,7 @@ body{
     padding: 50px;
     background-color: white;
     overflow: auto;
-    margin-top: 50px;
+
 }
 
 .titulo {
@@ -58,6 +65,7 @@ body{
 
 .texto{
     margin-bottom: 30px;
+    line-height: 2;
 }
 .card{                      /*colocar imagens lado a lado*/
     width: 32%;
@@ -78,33 +86,36 @@ body{
 }
 
 .section02{
+    background-color: #003d52;
     margin-top: 50px;
     background-image: url(../imagens/bg_detalhe.png);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .sobre{
     color:rgb(255, 255, 255);
     text-align: left;
-    padding: 50px 300px 200px 100px;
+    padding: 50px 300px 100px 100px;
 
 }
 
-.sobre h1{
+.sobre h2{
     font-size: 35px;
     text-transform: uppercase;
 }
 
 .sobre p{
     font-size: 20px;
+    line-height: 1.5;
 }
 
-.contato{
+#contato{
     font-size: 25px;
     font-weight: 650;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .rodape{
