@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+
+<head>
+    <title>Titulo da pagina </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Autor da pagina">
+    <meta name="description" content="Descriçoes">
+    <meta name="keywords" content="Palavras chaves">
+
+    <style>
+
+        .formato1 li ul{
+            display:none;
+        }
+
+        .formato1 li:hover{
+            background: #cccccc;
+        }
+        
+        .formato1 li:hover ul{
+            display: block;
+        }
+
+        .formato2 li ul{
+            height: 0;
+            overflow: hidden;
+            transition: height .5s;
+        }
+
+        .formato2 li:hover{
+            background: #cccccc;
+        }
+        
+        .formato2 li:hover ul{
+            height: 50px;
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <ul class="formato1">
+        <li>item 01</li>
+        <li>item 02
+            <ul>
+                <li>item 02.1</li>
+                <li>item 02.2</li>
+            </ul>
+        </li>
+        <li>item 03</li>
+    </ul>
+    
+    <hr>
+    
+    <ul class="formato2">
+        <li>item I</li>
+        <li>item II
+            <ul>
+                <li>item II.I</li>
+                <li>item II.II</li>
+            </ul>
+        </li>
+        <li>item III</li>
+    </ul>
+
+    <hr>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação de Hypertexto</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem para criação de folhas de estilos</dd>
+    </dl>
+
+    <hr>
+
+    <dl>
+        <dt>WWW</dt>
+        <dt>internet</dt>
+        <dd>Rede mundial de computadores</dd>
+        <br>
+        <dt>Javascript</dt>
+        <dd>Linguagem script para internet</dd>
+        <dd>Script para rodar no browser</dd>
+
+
+
+
+
+
+
+    </dl>
+
+
+</body>
+
+</html>
