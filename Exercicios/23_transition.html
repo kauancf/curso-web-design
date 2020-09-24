@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+
+                transition-property: width, height;                  /*Qual elemento eu quero fazer a transição*/
+                transition-duration: 1s, 3s;                    /*tempo de duração*/
+                transition-timing-function: cubic-bezier(.67,-0.38,.5,1.5);         /*tipo de animação*/
+                transition-delay:0s, .8s;                      /*atrasar animação*/
+            }
+            div:hover{
+                width: 400px;
+                height: 400px;
+
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Estrutura base</h1>
+        
+        <div>1</div>
+    </body>
+</html>
