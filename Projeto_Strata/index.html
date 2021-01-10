@@ -20,7 +20,7 @@
     <body>
         <header class="main-header">
             
-            <a href="index.html" class="main-header-link">
+            <a href="index.html" class="main-header-link imagem-link">
                 <img src="images/avatar.jpg" alt="Avatar de uma pessoa">
             </a>
             <h1 class="main-header-title">
@@ -47,65 +47,55 @@
 
                 <h3>Recent Works</h3>
             
-                <article class="recent-works-card">
-                    <a href="images/fulls/01.jpg"> <img src="images/thumbs/01.jpg" alt="foto de uma rua tranquila"> </a>
-                <p class="recent-works-card-title">Magna sed consequat tempus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-            
-            </section>
+                <div class="row">
+                    <div class="col-2">
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/01.jpg"> <img src="images/thumbs/01.jpg" alt="foto de uma rua tranquila"> </a>
+                                <p class="recent-works-card-title">Magna sed consequat tempus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                                
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/02.jpg"> <img src="images/thumbs/02.jpg" alt="foto de uma floresta"> </a>
+                                <p class="recent-works-card-title">Quam neqye ohasellus</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                                
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/03.jpg"> <img src="images/thumbs/03.jpg" alt="Foto de uma estante de livros em uma livraria"> </a>
+                                <p class="recent-works-card-title">Ultricies lacinia interdum</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                            
+                    </div>
 
-            <section class="main-content-section">
-                       
-                <article class="recent-works-card">
-                    <a href="images/fulls/02.jpg"> <img src="images/thumbs/02.jpg" alt="foto de uma floresta"> </a>
-                <p class="recent-works-card-title">Quam neqye ohasellus</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-            
-            </section>
-
-            <section class="main-content-section">
-                
-                <article class="recent-works-card">
-                    <a href="images/fulls/03.jpg"> <img src="images/thumbs/03.jpg" alt="Foto de uma estante de livros em uma livraria"> </a>
-                <p class="recent-works-card-title">Ultricies lacinia interdum</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-            
-            </section>
-
-            <section class="main-content-section">
-                
-                <article class="recent-works-card">
-                    <a href="images/fulls/04.jpg"> <img src="images/thumbs/04.jpg" alt="Foto dos pés de uma pessoa subindo a escada"> </a>
-                <p class="recent-works-card-title">Nunc emin commodo aliquer</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-            
-            </section>
-
-            <section class="main-content-section">
-
-                <article class="recent-works-card">
-                    <a href="images/fulls/05.jpg"> <img src="images/thumbs/05.jpg" alt="Foto de uma montanha com seu cume cheio de neve"> </a>
-                <p class="recent-works-card-title">Tortor metus commodo</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
-            
-            </section>
-
-            <section class="main-content-section">
-
-                <article class="recent-works-card">
-                    <a href="images/fulls/06.jpg"> <img src="images/thumbs/06.jpg" alt="foto de uma pequena casa em uma floresta"> </a>
-                <p class="recent-works-card-title">Risus ornare lacinia</p>
-                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-                </article>
+                    <div class="col-2">
+                        
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/04.jpg"> <img src="images/thumbs/04.jpg" alt="Foto dos pés de uma pessoa subindo a escada"> </a>
+                                <p class="recent-works-card-title">Nunc emin commodo aliquer</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                        
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/05.jpg"> <img src="images/thumbs/05.jpg" alt="Foto de uma montanha com seu cume cheio de neve"> </a>
+                                <p class="recent-works-card-title">Tortor metus commodo</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                        
+                            <article class="recent-works-card">
+                                <a class="imagem-link" href="images/fulls/06.jpg"> <img src="images/thumbs/06.jpg" alt="foto de uma pequena casa em uma floresta"> </a>
+                                <p class="recent-works-card-title">Risus ornare lacinia</p>
+                                <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+                            </article>
+                        
+                    </div>
+                </div>
                 
                 <a href="#" title="Veja portifolio completo" class="button-default">Veja portifolio completo</a>
             
-            </section>
+                
+                
 
             <section class="main-content-section">
                 
@@ -433,7 +423,7 @@
                     <textarea name="mensagem" id="msg" placeholder="Deixe aqui sua mensagem"></textarea>
 
                     <input class="button-default" type="submit" value="Send Message" >
-                    <input button-default button-default-stroke type="reset" value="Reset">
+                    <input class="button-default button-default-stroke" type="reset" value="Reset">
                 </form>
                          
             </section>
@@ -446,12 +436,27 @@
                 </div>
                 
                 <div class="gallery-thumb">
-                    <img src="images/thumbs/01.jpg" alt="Rua tranquila">
-                    <img src="images/thumbs/02.jpg" alt="Floresta">
-                    <img src="images/thumbs/03.jpg" alt="Biblioteca">
-                    <img src="images/thumbs/04.jpg" alt="Pessoa subindo escada">
-                    <img src="images/thumbs/05.jpg" alt="Montanha com neve">
-                    <img src="images/thumbs/06.jpg" alt="Casa da floresta">
+                    <div class="row">
+                        <div class="col-1-3">
+                            <img src="images/thumbs/01.jpg" alt="Rua tranquila">
+                            <img src="images/thumbs/02.jpg" alt="Floresta">
+                            <img src="images/thumbs/03.jpg" alt="Biblioteca">
+                        </div>
+
+                        <div class="col-1-3">
+                            
+                            <img src="images/thumbs/05.jpg" alt="Pessoa subindo escada">
+                            <img src="images/thumbs/04.jpg" alt="Montanha com neve">
+                            <img src="images/thumbs/06.jpg" alt="Casa da floresta">
+                        </div>
+
+                        <div class="col-1-3">
+                            <img src="images/thumbs/03.jpg" alt="Biblioteca">
+                            <img src="images/thumbs/05.jpg" alt="Montanha com neve">
+                            <img src="images/thumbs/01.jpg" alt="Biblioteca">
+                            
+                        </div>
+                    </div>
                 </div>
 
                 <h4>Left &amp; Right</h4>
@@ -459,7 +464,7 @@
                     <img class="img-left" src="images/avatar.jpg" alt="Pessoa de costa"> orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
                 </p>
                 <p>
-                    <img class="img-raight" src="images/avatar.jpg" alt="Pessoa de costa">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
+                    <img class="img-right" src="images/avatar.jpg" alt="Pessoa de costa">Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.
                 </p>
 
             </section> 
