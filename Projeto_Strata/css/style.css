@@ -70,6 +70,16 @@ blockquote{
     padding: .5em 0 .5em 1.5em;
 }
 
+blockquote p{
+    margin-bottom: .5em;
+}
+
+blockquote p:last-child{
+    margin-bottom: 0;
+}
+
+
+
 code{
     background: #f7f7f7;
     border-radius: .35em;
@@ -95,6 +105,15 @@ li{
     padding-left: .5em;
 }
 
+.hidden{ /*esconder um elemento para o desktop mais acessivel ao leitor de tela*/
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
 .ul-alternate{
     list-style-type: none; /* retirar o marcador na frente das listas */
     padding-left:0 ;
@@ -110,7 +129,7 @@ li{
     border: 0;
 }
 
-.ul-icons{
+.ul-icons, .icon-link{
     list-style-type: none; /* retirar o marcador na frente das listas */
 }
 
@@ -149,19 +168,32 @@ input:focus, textarea:focus{ /* mudar cor da borda quando clicado */
 
 .button-default{
     background-color: #49bf9d;
-    border: 2px solid #49bf9d;
+    border: 3px solid #49bf9d;
     color: white;
     border-radius: 5px;
     padding: .75em 5.5em;
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .5s;
+    cursor: pointer; /*colocar mãozinho no cursor*/ 
+}
+
+.button-default:hover{
+    background-color: #53ddb6;
+    border-color: transparent;
 }
 
 .button-default-stroke{
     color:inherit;
     background-color: white;
     border-color: #efefef;
+}
+
+.button-default-stroke:hover{
+    color:#49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
 }
 
 .button-default-small{
@@ -247,10 +279,10 @@ input:focus, textarea:focus{ /* mudar cor da borda quando clicado */
     color: white;
     font-weight: normal;
 }
-.main-header-link{
+.main-header-link, .main-footer-link{
     color:inherit;
 }
-.main-header-link:hover{
+.main-header-link:hover, .main-footer-link:hover, .icon-link:hover{
     color:#49bf9d
 }
 
@@ -327,4 +359,28 @@ input:focus, textarea:focus{ /* mudar cor da borda quando clicado */
 .col-2-3{
     width: 65%;
     float: left;
+}
+
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    padding: 0 54px 72px 0px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+
+.ul-icons a{
+    border-bottom:0;
+    color:#929292;
+}
+
+.copyright{
+    font-size: 14px;
+}
+.copyright li{
+    display: inline;
 }
