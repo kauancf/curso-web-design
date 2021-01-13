@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+            article:nth-child(1) a{ /* formatar apenas as tag a do primeiro article */ 
+                color: red;
+            }
+
+            article:nth-child(3) > p{ /* formatar apenas as tag p que sejam filhos diretos do terceiro filho */
+                color: red;
+            }
+
+            article:nth-child(5) h3 + p{ /* formatar apenas as tag p esteja logo após um h3 */
+                color: red;
+            }
+
+            article:nth-child(7) h3 ~ p{ /* formatar todas as tag p esteja logo após um h3 */
+                color: red;
+            }
+
+            .destaque{
+                background: yellow;
+            }
+
+            article:not(.destaque){ /* formata todos os article menos o que tenha a classe destaque */
+                color: violet;
+            }
+
+            a[href="#"]{ /*seleciona toda tag a com atributo href="#"*/
+                opacity: .2
+            }
+
+            a[href^="http"]{ /*seleciona todas tag a com href que inicie com http*/
+                color:red;
+            }
+
+            a[title]{ /*toda tag a que contem o atributo title*/
+                color:green;
+            }
+
+            a[href$=".pdf"]{ /*toda tag a com atributo href que termine com .pdf*/
+                text-decoration:none;
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <article> /
+            <h3>Estrutura base</h3> <!--primeiro filho-->
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr> <!--segundo filho-->
+
+        <article> <!--terceiro filho-->
+            <h3>Estrutura base</h3>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr> <!--quarto filho-->
+
+        <article> <!--quinto filho-->
+            <h3>Estrutura base</h3>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr> <!--sexto filho-->
+
+        <article> <!--setimo filho-->
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <h3>Estrutura base</h3>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr> <!--oitavo filho-->
+
+        <article class="destaque"> <!--nono filho-->
+            <h3>Estrutura base</h3>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://www.google.com.br" target="_blank">Link externo</a></li>
+            <li><a href="http://www.google.com.br/qq.pdf" target="_blank">Link externo</a></li>
+            <li><a href="23_transition.html" title="Veja o exercicio anterior" target="_blank">Link interno</a></li>
+
+        </ul>
+    </body>
+</html>

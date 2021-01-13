@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+       
+            input[type="checkbox"]{ /*formatar o checkbox*/
+                width: 50px;
+                height: 50px;
+            }
+
+            input[type="checkbox"]:checked{ /* formatar o checkbox quando estiver clicado*/
+                width: 100px;
+                height: 100px;
+            }
+
+            button:disabled{ /*formatar botão desabilitado*/
+                background: red;
+            }
+
+            p:empty:before{ /*formatar paragrafos vazios*/
+                content: "Paragrafo vazio não da, né!!!";
+            }
+
+            input[type="text"]:focus{
+                background: red;
+            }
+
+            a:focus, a:hover, div:focus, div:hover{
+                background: #ccc;
+            }
+
+            input::placeholder{
+                color: blue;
+            }
+
+            input:read-only{
+                color: blueviolet;
+                background: burlywood;
+            }
+
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Estrutura base</h1>
+        
+        <label><input type="checkbox" value="sim">Aceito o contrato</label>
+        <button>Vai</button>
+        <button disabled>Volta</button>
+
+        <p>Paragrafo 01</p>
+        <p></p>
+        <p></p>
+        <hr>
+
+        <input type="text">
+        <input type="text" value="valor iniciar">
+        <input type="text" value="valor iniciar" readonly>
+        <input type="text" value="valor iniciar" disabled>
+        <input type="text" placeholder="valor iniciar do placeholder">
+
+        <hr>
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+        </ul>
+
+        <div tabindex="1">Div 01</div> <!--Obrigar a divi a receber focos-->
+        <div tabindex="2">Div 02</div>
+        <div tabindex="3">Div 03</div>
+        <div tabindex="4">Div 04</div>
+
+    </body>
+</html>

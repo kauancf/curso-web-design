@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+         div{
+             border: 3px solid red;
+             padding: 25px;
+             margin: 25px;
+         }
+
+         div::before{ /*inserir texto pelo css no começo da div*/
+             content: "Testo inserido pelo before;"; 
+             background: #ccc;
+             border: 3px solid red;
+
+         }
+
+         div::after{ /*inserir texto pelo css no final da div*/
+             content: "Testo inserido pelo after;";
+             border: 3px solid red;
+
+         }
+        /*criar quadrado no quanto inferior da borda usando after*/ /*inicio*/
+         div{
+             position: relative;
+         }
+
+         div::after{
+             content: "";
+             background: red;
+             width: 25px;
+             height: 25px;
+             display: inline-block;
+             position: absolute;
+             bottom: 0;
+             right: 0;
+         }
+        /*criar quadrado no quanto inferior da borda usando after*/ /*final*/
+
+        </style>
+        
+    </head>
+    
+    <body>
+
+        <div> Texto principal da div </div>
+      
+        <article>
+            <p>antes do titulo</p>
+            <h3>Estrutura base</h3>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+            <p>Paragrafo <a href="#"> com um link em <b>negrito</b></a></p>
+        </article>
+
+        <hr>
+
+        <ul>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="#">Link falso</a></li>
+            <li><a href="http://www.google.com.br" target="_blank">Link externo</a></li>
+            <li><a href="http://www.google.com.br/qq.pdf" target="_blank">Link externo</a></li>
+            <li><a href="23_transition.html" title="Veja o exercicio anterior" target="_blank">Link interno</a></li>
+
+        </ul>
+    </body>
+</html>

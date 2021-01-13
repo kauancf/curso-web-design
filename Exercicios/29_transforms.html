@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+
+            .div1{
+                width: 150px;
+                height: 150px;
+                background: red;
+                transform: translate(50%, 50%); /* mover no exico x e y; % é relativa ao tamanho do elemento */ 
+            }
+
+            .div2{
+                width: 150px;
+                height: 150px;
+                background: blue;
+                position: relative; /* no position a % é referente ao elemento pai, no caso o body */  
+                left: 50%;
+                top: 30%;
+                
+            }
+
+            .div3{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div3-interna{
+                background: yellow;
+                transform: translate(50%, 25px);
+            }
+
+            .div4{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div4-interna{
+                background: yellow;
+                transform: rotate(45deg)
+            }
+
+            .div5{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div5-interna{
+                background: yellow;
+                transform-origin: left top;
+                transform: rotate(45deg)
+            }
+
+            .div6{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div6-interna{
+                background: yellow;
+                transform: rotate(30deg) translate(30px);
+            }
+            
+            .div7{
+                width: 50%;
+                overflow: hidden;
+                border: solid 2px black;
+            }
+
+            .div7-interna{
+                background: yellow;
+                transform: translate(30px) rotate(30deg);
+            }
+
+            .div8{
+                width: 100px;
+                height: 100px;
+                background: orange;
+                transform: skew(-30deg, 50deg);
+            }
+
+            .div9{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                transform: scale(.5) translateX(50%);
+                transition: transform .5s;
+            }
+
+            .div9:hover{
+                transform: scale(2);
+            }
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Estrutura base</h1>
+        
+        
+        <div class="div1">
+            Div 01
+        </div>
+
+        <div class="div2">
+            Div 02
+        </div>
+
+        <hr>
+
+        <div class="div3">
+            <div class="div3-interna">Conteudo qualquer</div>
+                <p>Div03   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div>
+        <br>
+        <hr>
+        <div class="div4">
+            <div class="div4-interna">Conteudo qualquer</div>
+                <p>Div04 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div>
+        <br>
+        <hr>
+        <div class="div5">
+            <div class="div5-interna">Conteudo qualquer</div>
+                <p>Div05 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div>
+        <br>
+        <hr>
+        <div class="div6">
+            <div class="div6-interna">Conteudo qualquer</div>
+                <p>Div06 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div><br>
+        <hr>
+        <div class="div7">
+            <div class="div7-interna">Conteudo qualquer</div>
+                <p>Div07 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div>
+        <hr>
+        <div class="div8">Div 08</div>
+        <div class="div9">Div 09</div>
+
+
+      
+    </body>
+</html>

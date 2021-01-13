@@ -1,0 +1,83 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+    
+        <style>
+        
+            body{
+                font-family: sans-serif;
+            }
+            
+            span{ /* cria o novo checkbox */
+                display: inline-block;
+                background: #ddd;
+                width: 40px;
+                height: 15px;
+                margin-right: 10px;
+                border-radius: 50px;
+                position: relative;
+            }
+            input[type="checkbox"] + span::after{ /* cria o check */
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    bottom: 2px;
+                    left: 16px;
+                    right: 16px;
+                    border-radius: 50%;
+                    background:#eee;
+                    transform:translate(-12px);
+                }
+
+                input[type="checkbox"]:checked + span::before{ /* cria o check */
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    bottom: 2px;
+                    left: 16px;
+                    right: 16px;
+                    border-radius: 50%;
+                    background: red;
+                    transform:translate(12px);
+                }
+          
+                input[type="checkbox"]{ /*torna o checkbox invisivel*/
+                    width: 1px;
+                    height:1px;
+                    overflow: hidden;
+                    visibility: hidden;
+                    display: inline-block;
+                    margin: 0;
+                }
+            
+        </style>
+    </head>
+    <body>
+       
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Esporte
+        </label>
+        
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Politica
+        </label>
+        
+        <label>
+            <input type="checkbox">
+            <span></span>
+            Educação
+        </label>
+    </body>
+</html>
