@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- DOCTYPE informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title>Titulo da pagina </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Autor da pagina">
+        <meta name="description" content="Descriçoes">
+        <meta name="keywords" content="Palavras chaves">
+
+        <meta name="viewport" content="width=device-width"> <!--Tornar a resolução da tela igual o tamanho da tela-->
+    
+        <style>
+            body{
+                background: yellow;
+                font-size: 16px;
+            }
+
+            .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+
+            @media screen and (min-width: 400px){  /*fortação para quando o dispositivo tiver um minimo de 400px de largura*/
+                body{
+                    background: tomato;
+                }
+            }
+       
+        </style>
+        
+    </head>
+    
+    <body>
+        <h1>Exemplo de Media queries</h1>
+        
+        <p>Paragrafo qualquer</p>
+    
+        <div class="teste"></div>
+        <div class="container">
+            <div>Div 01</div>
+            <div>Div 02</div>
+
+        </div>
+    </body>
+</html>

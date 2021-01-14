@@ -13,54 +13,57 @@
             body{
                 font-family: sans-serif;
             }
+
+            label{
+                margin-right: 25px;
+            }
             
-            span{ /* cria o novo checkbox */
+            label span{   /* cria o novo checkbox */
                 display: inline-block;
-                background: #ddd;
-                width: 40px;
-                height: 15px;
-                margin-right: 10px;
-                border-radius: 50px;
+                background: #ccc;
+                width: 60px;
+                height: 30px;
+                border-radius: 15px;
                 position: relative;
             }
-            input[type="checkbox"] + span::after{ /* cria o check */
+
+            label span::before{ /* cria o check */
                     content: '';
                     display: block;
-                    position: absolute;
-                    top: 2px;
-                    bottom: 2px;
-                    left: 16px;
-                    right: 16px;
-                    border-radius: 50%;
                     background:#eee;
-                    transform:translate(-12px);
+                    width: 20px;
+                    height: 20px;    
+                    border-radius: 50%;
+                    margin: 5px;
+                    transition: all .2s ease-in-out;
                 }
 
-                input[type="checkbox"]:checked + span::before{ /* cria o check */
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 2px;
-                    bottom: 2px;
-                    left: 16px;
-                    right: 16px;
-                    border-radius: 50%;
-                    background: red;
-                    transform:translate(12px);
-                }
-          
-                input[type="checkbox"]{ /*torna o checkbox invisivel*/
-                    width: 1px;
-                    height:1px;
-                    overflow: hidden;
-                    visibility: hidden;
-                    display: inline-block;
-                    margin: 0;
-                }
+           
+
+              label input:checked + span:before{ /*simular borda*/
+                  transform: translateX(30px);
+                  background: red;
+              }
+
+              label input:focus + span{
+                box-shadow: 0 0 0 1px red;
+            }
+
+              input[type="checkbox"]{ /*torna o checkbox invisivel*/
+                width: 1px;
+                height:1px;
+                overflow: hidden;
+                opacity: 0;
+                display: inline-block;
+                margin: 0;
+      
+            }
             
         </style>
     </head>
     <body>
+
+        <h1>Estrutura base</h1>
        
         <label>
             <input type="checkbox">

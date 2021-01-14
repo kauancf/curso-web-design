@@ -1,0 +1,12 @@
+body{
+    font-family: serif;
+    color: black;
+    font-size: 16px;
+    background: transparent;
+}
+
+a::after{
+    content: attr(href); /*mostrar o conteudo contido dentro do atributo href podendo ser outros atributos tambem*/
+    display: inline-block;
+    margin: 0 10px;
+}
