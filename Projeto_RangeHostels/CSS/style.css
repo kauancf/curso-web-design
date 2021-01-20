@@ -8,6 +8,12 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Oxygen", Arial, Helvetica, sans-serif;
 }
 
+.clearfix::after{ /*fixar elementos com float*/
+    content: ' ';
+    display: block;
+    clear: both;     
+}
+
 .button{
 
     padding: 1em 3em;
@@ -23,12 +29,6 @@ h1, h2, h3, h4, h5, h6{
 .button:hover{
     background: #37a0a0;
 }
-
-
-
-
-
-
 
 .top-header{
     text-align: center;
@@ -153,4 +153,48 @@ h1, h2, h3, h4, h5, h6{
     font-size: 1em;
     text-decoration: none;
     color: white;
+}
+
+@media screen and (min-width: 48.75em){  /*fortação para quando o dispositivo tiver um minimo de 400px de largura*/
+   .top-header-logo{
+    float: left;
+   }
+   
+   .top-nav{
+    background: transparent;
+    float:right;
+    margin-top: 3em;
+ }
+
+   .top-nav ul{
+        margin: 0;
+        padding: 0;
+   }
+   
+   .top-nav li{
+    display: inline-block;
+}
+
+.top-nav a{
+    color: #713a84;
+    padding: 1em;
+    font-weight: bold; /* acrecentar negrito aos links*/ 
+}
+
+.top-nav a:hover{
+    background: #e7d9fc;
+}
+   
+   
+    .top-content{
+        background: #521a66;
+        color: white;
+    }
+
+    .top-content-title, .top-content-subtitle{
+        color: white;
+
+    }
+
+ 
 }
